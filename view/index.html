@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockets</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../images/rocket.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container m-3">
+            <h1 class="display-1 text-center">¡Cohetes!</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <button class="btn btn-success" onclick="crearCohete(1)">Crear cohete 1</button>
+                        <button class="btn btn-success" onclick="acelerarCohete(1)">Acelerar cohete 1</button>
+                        <button class="btn btn-success" onclick="frenarCohete(1)">Frenar cohete 1</button>
+                        <button class="btn btn-success" onclick="imprimirCohete(1)">Imprimir cohete 1</button>
+                    </div>
+                    <div>
+                        <img src="../images/Rakete.svg" class="cohete_1 animate__animated " id="cohete1" width="57.5%">
+                        <h3 class="text-danger bg-light" id="cohete1Crear"></h3>
+                        <h5 class="text-white bg-dark" id="velocidad1"></h5>
+                        <h4 class="text-white bg-dark" id="cohete1Error"></h4>
+                        <h5 class="text-white bg-dark" id="cohete1Imprimir"></h5>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <button class="btn btn-warning" onclick="crearCohete(2)" type="button" value="crear">Crear cohete 2</button>
+                        <button class="btn btn-warning" onclick="acelerarCohete(2)" type="button" value="crear">Acelerar cohete 2</button>
+                        <button class="btn btn-warning" onclick="frenarCohete(2)" type="button" value="crear">Frenar cohete 2</button>
+                        <button class="btn btn-warning" onclick="imprimirCohete(2)" type="button" value="crear">Imprimir cohete 2</button>
+                    </div>
+                    <div>
+                        <img src="../images/starting-rocket.svg" class="cohete_2 animate__animated " id="cohete2" width="60%">
+                        <h3 class="text-danger bg-light" id="cohete2Crear"></h3>
+                        <h5 class="text-white bg-dark" id="velocidad2"></h5>
+                        <h4 class="text-white bg-dark" id="cohete2Error"></h4>
+                        <h5 class="text-white bg-dark" id="cohete2Imprimir"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="../models/class.js"></script>
+    <script src="../controller/app.js"></script>
+</body>
+
+</html>
